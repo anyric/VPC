@@ -77,7 +77,7 @@ With the network ready setup, its time to create our instances in the public and
 * Once in, create a new .pem file and copy the content of the key for the private instance in it
 * Copy the connection string of the private instance and ssh into it from the nat instance
 * Once in, git clone this repo cd in the VPC dir and run ```source api.sh``` to install the api app
-* After the installation, copy your RDS endpoint and export the database url using the environment variable DATABASE_URL e.g ```export DATABASE_URL="postgres://username:password@RDS-Endpoint:5432/database-name``` replacing username, password, RDS-Endpoint and database-name with yours values respectively
+* After the installation, copy your RDS endpoint and export the database url using the environment variable DATABASE_URL e.g ```export DATABASE_URL="postgres://username:password@RDS-Endpoint:5432/database-name"``` replacing username, password, RDS-Endpoint and database-name with yours values respectively
 
 
 
