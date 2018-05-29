@@ -1,4 +1,4 @@
-# Custom VPC network for deploying cp
+## Custom VPC network for deploying Frontend app in public and backend in private subnets 
 The following instructions assumes you already have an AWS account. If you don't have, then sign up for one from here https://aws.amazon.com/
 
 #### Creating VPC
