@@ -63,7 +63,7 @@ EOF'
 
 setupYummy(){
     printf "***********************Setting yummy exec*************** \n"
-    sudo bash -c 'cat <<EOF> /home/ubuntu/Devops/Yummy-Recipes-Reactjs/yummy.sh
+    sudo bash -c 'cat <<EOF> /home/ubuntu/VPC/Yummy-Recipes-Reactjs/yummy.sh
 #!/bin/bash
 
 cd /home/ubuntu/Devops/Yummy-Recipes-Reactjs
@@ -81,7 +81,7 @@ After=network.target
 
 [Service]
 User=ubuntu
-ExecStart=/bin/bash /home/ubuntu/Devops/Yummy-Recipes-Reactjs/yummy.sh
+ExecStart=/bin/bash /home/ubuntu/VPC/Yummy-Recipes-Reactjs/yummy.sh
 
 [Install]
 WantedBy=multi-user.target
