@@ -14,14 +14,14 @@ exportLang() {
 
 installPython(){
     printf '**********************Installing Python 3.6 and dependancies***************** \n'
-    sudo add-apt-repository -y ppa:deadsnakes/ppa
+    sudo add-apt-repository ppa:deadsnakes/ppa
     sudo apt-get update
     sudo apt-get install -y python3.6 python3-pip nginx python3.6-gdbm
     sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
     sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 10
-    sudo update-alternatives --config -y python3
+    sudo update-alternatives --config python3
     
-    sudo pip3 install -y virtualenv
+    sudo apt install -y virtualenv
     virtualenv -p python3 venv
 }
 
