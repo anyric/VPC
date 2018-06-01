@@ -37,9 +37,10 @@ cloneRepo(){
 }
 
 setupProjectDependancies(){
-    printf "*******************Installing requirements.txt************* \n"
-    cd Yummy-Recipes-Api
-    sudo pip3 install -r requirements.txt
+  printf "*******************Installing requirements.txt************* \n"
+  source venv/bin/activate
+  cd Yummy-Recipes-Api
+  sudo pip3 install -r requirements.txt
 }
 
 setupHostIP(){
