@@ -66,7 +66,7 @@ setupYummy(){
     sudo bash -c 'cat <<EOF> /home/ubuntu/VPC/Yummy-Recipes-Reactjs/yummy.sh
 #!/bin/bash
 
-cd /home/ubuntu/Devops/Yummy-Recipes-Reactjs
+cd /home/ubuntu/VPC/Yummy-Recipes-Reactjs
 npm start
 EOF'
 
