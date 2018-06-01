@@ -41,6 +41,7 @@ setupProjectDependancies(){
   source venv/bin/activate
   cd Yummy-Recipes-Api
   sudo pip3 install -r requirements.txt
+  deactivate
 }
 
 setupHostIP(){
@@ -90,7 +91,7 @@ setupYummy(){
     sudo bash -c 'cat <<EOF> /home/ubuntu/VPC/Yummy-Recipes-Api/yummy.sh
 #!/bin/bash
 
-cd /home/ubuntu/Devops
+cd /home/ubuntu/VPC
 source venv/bin/activate
 sudo pip install flask
 cd Yummy-Recipes-Api
